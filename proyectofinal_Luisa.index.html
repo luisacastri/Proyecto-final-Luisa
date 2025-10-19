@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<title>Mi Portfolio</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<style>
+	*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+
+	body {
+	font-family: Avenir Next, sans-serif;
+	
+	}
+
+	header {
+	background: #2a5e95;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	}
+
+	header h1 {
+      margin-bottom: 10px;
+      font-weight: bold;
+	}
+
+	header h2 {
+      margin-bottom: 20px;
+	}
+
+  h1 {
+    text-align: center;
+    color: #F1E1C1;
+    font-weight: bold;
+    width: 100%;
+  }
+	h4 {
+		font-weight: bold;
+		color: #355C7D;
+	}
+
+	section {
+	padding-top: 80px;
+	min-height: 70vh;
+
+	}
+
+	#Inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #8C262F !important;
+  color: #F1E1C1;
+  min-height: 70vh;
+  margin: 0;
+  padding: 0;
+
+	}
+
+	#Hobbies {
+		background: #D9D8D7 !important;
+		margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+	}
+
+	#Contacto {
+		background: #355C7D !important;
+		margin: 0 auto;
+		color: #F1E1C1;
+		font-weight: Semibold;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* AÑADE esta línea si no está */
+
+	}
+
+  .navbar-custom {
+      background-color: #8C262F !important; 
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+     color: #8C262F !important; 
+    }
+
+    .navbar-custom .nav-link:hover {
+      color: #fab1a0 !important;
+    }
+
+	footer {
+	background: #8C262F !important;
+	color: #F1E1C1 !important;
+	text-align: center;
+	padding: 15px;
+  /* Footer */
+
+	}
+
+    #btn-modal {
+      background-color: #D9D8D7 !important;
+      color: #8C262F;
+      border-radius: 12px;
+      padding: 12px 25px;
+      font-weight: bold;
+      transition: 0.3s;
+  }
+
+    #btn-modal:hover {
+      background-color: #ffffff !important;
+  }
+
+
+    .card-img-top {
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+  }
+
+
+    .card {
+      background-color: #fff3e0 !important; 
+      border: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+  }
+
+    .card:hover {
+      transform: translateY(-10px);
+  }
+
+
+</style>
+</head>
+
+<body>
+
+	 <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#Inicio">Mi Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Hobbies">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+ <section id="Inicio">
+
+    <figure class="text-center">
+  <blockquote class="blockquote">
+    <h1 class="display-1">¡Hola, soy Luisa!</h1>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+  Preimpresora y estudiante del IES Carrús
+</figcaption>
+</figure>
+
+
+<button type="button" class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Ver más sobre mí
+</button>
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Más sobre mí</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>Gracias por visitar mi portfolio. Soy apasionada por el diseño, la creatividad y todo lo relacionado con la impresión y preimpresión</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</section>
+
+<section id="Hobbies">
+
+   <div class="container text-center">
+  <div class="row justify-content-center text-center">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <img src="IMG_6545 copia.jpg" class="card-img-top" alt="Sobre mí">
+  <div class="card-body">
+
+  	<h4>Sobre mí</h4>
+    <p class="card-text">Me llamo Luisa. Tengo 19 años, nací el 31 de julio de 2006 en Medellín, Colombia.
+     Me encantan los dibujos animados, el matcha, el café y el mango. Mi personaje favorito siempre ha sido Snoopy. Me gusta viajar, escuchar música, salir con mis amigos, cocinar y jugar videojuegos.</p>
+
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <img src="IMG_6224 copia.jpg" class="card-img-top" alt="Hobbies">
+  <div class="card-body">
+
+  	<h4>Experiencia</h4>
+    <p class="card-text">Cuando terminé la Escuela Secundaria Obligatoria, entré en el Grado Medio de Preimpresión Digital. En mi segundo año, hice las prácticas en la empresa donde trabajo actualmente: Filmagraph. Allí me especializo en la creación de fotograbado e impresión digital en pequeño formato.</p>
+  </div>
+</div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <img src="IMG_5141 copia.jpg" class="card-img-top" alt="Estudios">
+  <div class="card-body">
+
+  	<h4>Estudios</h4>
+    <p class="card-text">En 2024 me gradué del Grado Medio de Preimpresión Digital.
+    Actualmente estoy cursando el Grado Superior de Diseño de Publicaciones Impresas y Multimedia.
+	Después de terminar el Grado Superior quiero entrar en la escuela de idiomas y obetener los títulos de inglés.</p>
+
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+  </section>
+
+  <section id="Contacto">
+  <div class="container" style="max-width: 500px; margin: 0 auto; text-align: center;">
+    <h1>Contacto</h1>
+    <div class="mb-3">
+      <label for="inputNombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="inputNombre" placeholder="Tu nombre">
+    </div>
+
+    <div class="mb-3">
+      <label for="inputEmail" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@gmail.com">
+    </div>
+
+    <div class="mb-3">
+      <label for="inputMensaje" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="inputMensaje" rows="3"></textarea>
+    </div>
+  </div>
+</section>
+
+<footer>
+<p>&copy;2025 - Mi Portfolio</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
